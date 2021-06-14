@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../imagens/Screenshot_1.png);
+}
+header > h1 {
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+color:rgb(201, 201, 34) ;
+font-size: 2.3em;
+}
+header > p{
+font-size: 1.2em;
+width: 95%;
+display: flex;
+justify-content: center;
+align-items: center;
+color:rgb(160, 158, 53);
+margin-bottom: 10px;
+box-shadow: 10px 15px 20px #111;
+}
+header>a{/*home page*/
+    font-size: 1.2em;
+    font-style: none;
+    color: rgb(43, 43, 16) ;
+    text-decoration: none;
+}
+.ladoEsquerdo{
+ width: 50%;
+ float: left;
+ margin-bottom: 20px;
+}
+.ladoDireito{
+    width: 43%;
+    float: left ;
+    background-color: rgb(24, 21, 21);
+    margin-bottom: 20px;
+    opacity: 90%;
+    box-shadow: -2.4em 2em 2em rgb(7, 7, 7);
+    color: rgb(221, 202, 202);
+}
+.ladoEsquerdo input, select{
+    display: block;
+    margin-left: 15%;
+    background-color: rgb(250, 252, 244);
+    color: rgb(5, 5, 5);
+    border-radius:4px;
+    padding: 0.2em;
+    border-style: outset;
+    box-shadow: 10px 15px 20px;
+    width: 400px;
+}
+.ladoEsquerdo label{
+    display: block;
+    margin-left: 15%;
+    color: rgb(5, 1, 1);
+    font-size: 20px;
+}
+.radio{
+    margin: 20px 10px 10px 50px;
+    font-size: 1.3em;
+}
+#formServico1,#formServico2,#formServico3{
+    width: 90%;
+    margin-left: 5px;
+}
+#opcaoServico1,#opcaoServico2,#opcaoServico3{
+    width: 150px;
+    margin-left: 5px;
+}
+
+
+#descricaoServ{
+    font-size: 1.3em;
+    margin-left: 20px;
+}
+#formDescricaoUsuario{
+    margin: 10px 0px 30px 20px;
+    width: 83%;
+    height: 10vh;
+}
+#confirmacaoSenha, #formSenha, #labelSenha, #labelConfirmacao{
+    display: block;
+    width: 300px;
+    margin-left: 20px;
+    font-size: 1,8em;
+}
+button[type=submit] {
+	width:150px;
+    height: 40px;
+    margin: 20px;
+	color:#FFF;
+	background:linear-gradient(top, #F33, #933 );
+	background:-webkit-linear-gradient(top, #F33, #933 );
+	background:-moz-linear-gradient(top, #F33, #933 );
+	border:1px solid #333;
+	cursor:pointer;
+    border-radius:4px;
+}
+footer{
+clear: both;
+}
+.hidden{
+    display: none;
+}
+@media (max-width: 769px) { 
+    header > h1, p{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    }
+    .ladoEsquerdo{
+        width: 100%;
+    }
+    .hidden textarea{
+        width: 85%;
+        margin-left: 5%;
+    }
+    .ladoEsquerdo label{
+        display: block;
+        margin-left: 5%;
+        width: 85%;
+    }
+    .ladoEsquerdo input{
+        margin-left: 5%;
+        width: 85%;
+    }
+    .ladoEsquerdo select{
+        margin-left: 5%;
+    }
+    .ladoDireito{
+        width: 85%;
+        margin: 5%;
+    }
+    #confirmacaoSenha, #formSenha, #labelSenha, #labelConfirmacao{
+        display: block;
+        width: 85%;
+        margin-left: 20px;
+        font-size: 1,8em;
+    }
+  
+    #descricaoServ textarea{
+        display: block;
+        margin-left: 5%;
+        width: 85%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+@media (max-width: 1025px) {
+
+    .hidden textarea{
+        width: 85%;
+        margin-left: 5%;
+    }
+    .ladoEsquerdo label{
+        display: block;
+        margin-left: 5%;
+    }
+    .ladoEsquerdo input{
+        margin-left: 5%;
+        width: 85%;
+    }
+    .ladoEsquerdo select{
+        margin-left: 5%;
+    }
+  }
+
+}
