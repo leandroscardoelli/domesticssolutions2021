@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/Cadastro_Perfil.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home_page.html" id="homePg">home page</a>
+        <h1>Faça seu Cadastro</h1>
+        <p>Fazendo Cadastro você cria um perfil que lhe permite encontrar prestadores de serviços
+            perto de você, e também divulgar seus serviços, se assim desejar. </p>
+    </header>
+
+    <main>
+        <form id="form">
+            <div class="ladoEsquerdo">
+                <label for="FormNome">Nome de Usuário</label>
+                <input type="text" id="formNome" placeholder="Nome Completo">
+
+                <label for="formDate">Dt de Nascimento:</label>
+                <input type="date" name="data" id="formDate" style="width: 150px;">
+
+                <label for="formSexo">Sexo:</label>
+                <select id="formSexo" style="width: 160px;">
+                    <option selected=""></option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+
+                <label for="formEscolaridade">Escolaridade:</label>
+                <input type="text" id="formEscolaridade" placeholder="EX: Ensino Médio Completo">
+
+                <label for="formCPF">CPF:</label>
+                <input type="number" id="formCPF" placeholder="000.000.000-00">
+
+                <label for="formTelefone"> Tel. Fixo:</label>
+                <input type="tel" id="formTelefone" placeholder="(34)3434-3434">
+
+                <label for="formCelular"> Celular:</label>
+                <input type="tel" id="formCelular" placeholder="(17)99999-9999">
+
+                <label for="FormEmail">Email</label>
+                <input type="email" id="formEmail" placeholder="email...">
+
+                <label for="formCep">CEP:</label>
+                <input type="text" id="formCep" placeholder="99.999-000">
+
+                <label for="formUF">Estado:</label>
+                <select id="formUF" style="width: 155px;">
+                    <option selected=""> </option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MG</option>
+                    <option>MS</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+
+                <label for="formCidade">Cidade:</label>
+                <input type="text" id="formCidade" placeholder="Belo Horizonte">
+
+                <label for="formBairro">Bairro:</label>
+                <input type="text" id="formBairro" placeholder="Coração Eucarístico">
+
+                <label for="formEndereco">Endereço:</label>
+                <input type="text" id="formEndereco" placeholder="Rua dos Lobos, nº 0">
+            </div>
+
+             <div class="ladoDireito">
+                <h1>Deseja Divulgar Seus Serviços?</h1>
+                <div class="radio">
+                    <input type="radio" id="formRadio1" name="q1" onclick="teste()" checked>
+                    <label for="formRadio1"> Não no momento.</label><br>
+                    <input  type="radio" id="formRadio2" name="q1" onclick="teste()">
+                    <label for="formRadio2">Sim, imediatamente. </label>
+                </div><br>
+
+                <div class="hidden" id="descricaoServ">
+                
+                    <p>Descreva os serviços que você pode prestar e os valores cobrados(a seu critério). Atenção: para
+                        melhorar a organização, preencha em cada campo um serviço específico, caso você preste mais de
+                        um. Dê detalhes abaixo da opção. </p>
+                        
+                        <select name="servicos" id="opcaoServico1">
+                            <option selected=""></option>
+                            <option >Faxina</option>
+                            <option>Lavadeira</option>
+                            <option>Passadeira</option>
+                            <option>Pintura</option>
+                            <option>Serralheria</option>
+                            <option >Vidraçaria</option>
+                            <option>Chaveiro</option>
+                            <option>Pedreiro</option>
+                            <option>Bombeiro</option>
+                            <option>Eletricista</option>
+                            <option>babá</option>
+                            <option>Motorista</option>
+                            <option>Mecânico</option>
+                            <option>Instalador</option>
+                          </select>    
+                    <textarea rows="5" name="servico1" id="formServico1"></textarea>
+                    <select name="servicos" id="opcaoServico2">
+                        <option selected=""></option>
+                        <option >Faxina</option>
+                        <option>Lavadeira</option>
+                        <option>Passadeira</option>
+                        <option>Pintura</option>
+                        <option>Serralheria</option>
+                        <option >Vidraçaria</option>
+                        <option>Chaveiro</option>
+                        <option>Pedreiro</option>
+                        <option>Bombeiro</option>
+                        <option>Eletricista</option>
+                        <option>babá</option>
+                        <option>Motorista</option>
+                        <option>Mecânico</option>
+                        <option>Instalador</option>
+                      </select>
+                    <textarea rows="5" name="servico2" id="formServico2"></textarea>
+
+                </div><br>
+
+                <input type="text" id="formDescricaoUsuario" placeholder="mais sobre você... hobies? Experiências? "><br>
+
+                <label for="formSenha" id="labelSenha"> Senha: </label>
+                <input type="password" id="formSenha" placeholder="Digite sua Senha" minlength="5"><br>
+
+                <label for="confirmacaoSenha" id="labelConfirmacao"> Confirmação de Senha: </label>
+                <input type="password" id="confirmacaoSenha" placeholder="confirme sua senha" minlength="5"><br>
+
+                <input type="checkbox" name="agreement" id="formCheck" required>
+                <label for="formCheck">Eu li e aceito os <a href="...">termos de uso.</a>
+                </label><br>
+
+                <button type="submit">Concluir</button>
+            </div>  
+        </form>
+    </main>
+
+    <footer>
+        copyright 2021 (@) Domestic Solutions
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/Cadastro_Perfil.js"></script>
+</body>
+
+</html>

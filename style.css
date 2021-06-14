@@ -1,0 +1,91 @@
+.row {
+  display: flex!important;
+  flex-wrap: wrap;
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+
+.h1{
+  color: #ffffff;
+}
+.col{
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+  margin-bottom: 0px!important;
+}
+.fa-google:before {
+  content: "\f1a0";
+margin-right: 50px;
+
+}
+.fa-facebook:before {
+  content: "\f09a";
+  margin-right: 40px;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  margin-right: 40px;
+}
+.fa-twitter-square:before {
+  content: "\f081";
+  margin-right: 40px;
+header {
+    background-color: rgb(194, 197, 196);
+}
+
+#divBusca{
+    background-color:#ffffff;
+    border:solid 2px #050404;
+    border-radius:10px;
+    width: 500px;
+    position: absolute;
+    left: 15%;   
+    margin-left: 300px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+  }
+  
+  #btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#9c9a9a;
+  }
+  
+  #divBusca img{
+    float:left;
+  }
+  
+.menuprincipal > ul > li:hover{
+    background-color: rgb(241, 242, 245);
+}
+
+.menuprincipal >ul >li {
+    display: display-legacy;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+main {
+    height: 500px;
+    background-color: rgb(253, 253, 253);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+footer {
+    height: 80px;
+    background-color: rgb(206, 206, 206);
+    font-family: Arial, Helvetica, sans-serif;
+}
