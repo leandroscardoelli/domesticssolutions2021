@@ -1,0 +1,106 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1{
+      color: darkgrey;
+    }
+    body{
+      background-image: url(../imagens/Screenshot_1.png);
+   
+    }
+    .um{
+      border-radius: 3px;
+      border: 1px solid rgb(107, 106, 106);
+      background-image: url(../imagens/conectividad.jpg);
+    }
+    .tres{
+      border: 1px solid rgb(107, 106, 106);
+      border-radius: 3px;
+    }
+    .cardBusca{
+      float: left;
+      margin: 10px 10px 10px 10px;
+    }
+    #topNavigation{
+      background-color:#F5FFFA;
+    }
+    .nav-link:hover {
+      background-color: rgb(204, 5, 5);
+      box-shadow: 10px 15px 20px rgb(0, 0, 0);
+      border-radius: 8px;
+    }
+    #imgPerfil{
+      margin-left: 5%;
+      border-radius: 100%;
+      width: 200px;
+    }
+    #imgPerfil:hover{
+      box-shadow: 10px 15px 20px rgb(0, 0, 0);
+    }
+    button:hover {
+      box-shadow: 10px 15px 20px rgb(0,0,0);
+    }
+    .center{
+    text-align: center;
+    }
+    #oculto{
+      display: none;
+      border-radius: 100%;
+    }
+    #oculto:hover{
+      box-shadow: 10px 15px 20px rgb(0, 0, 0);
+    }
+    .marge10{
+      margin: 10px 10px 10px 10px;
+    }
+    .filtro{
+      background-color: rgb(117, 113, 113);
+      border-radius: 10%;
+    }
+    #offcanvasTopera{
+    height: 100%;
+    }
+    #offcanvasvaga{
+      height: 100%;
+    }
+    .modal-body{
+   background-image: url(../imagens/Screenshot_1.png);
+      font-size: 1.1em;
+      color: black;
+    }    
+    @media (max-width: 400px) { 
+    p{
+     overflow:auto;
+    }
+    .navbar-brand{
+      margin-left: 2px;
+    }
+    #nav-home-tab, #nav-profile-tab{
+      margin-left: 10%;
+    }
+    #dois,#tres{
+      width: 100%;
+    }
+  }
+  @media (max-width: 800px) { 
+    p{
+     overflow:auto;
+    }
+    #nav-home-tab, #nav-profile-tab{
+      font-size: 20px;
+    }
+    #imgPerfil{
+      width: 170px;
+    }
+  }
+  @media (max-width: 1026px){
+
+  }
+
+ /* @media (min-width: 1150px){
+    .mais{
+      width: 500px;
+    }
+  }*/

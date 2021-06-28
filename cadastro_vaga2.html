@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cadastro_vaga2.css">
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="Home_page.html"> <img src="imagens/logods.PNG" width="130px" alt="130"> </a>
+    </nav>
+    <header>
+        <h1>Cadastro do Empregador</h1>
+        <h3>Fazendo Cadastro você cria um perfil que lhe permite divulgar vagas e selecionar prestadores de serviços
+            perto de você, se assim desejar.
+        </h3>
+    </header>
+    <main>
+        <form id="form" action="">
+            <label for="titulovaga">Título da Vaga:</label>
+            <input type="text" id="titulovaga" name="titulovaga" required>
+            <br><br>
+            <label for="servicos">Selecione o tipo de serviço:</label>
+            <select name="servicos" id="listaServicos">
+                <option selected="">Selecione...</option>
+                <option>Faxina</option>
+                <option>Lavadeira</option>
+                <option>Passadeira</option>
+                <option>Pintura</option>
+                <option>Serralheria</option>
+                <option>Vidraçaria</option>
+                <option>Chaveiro</option>
+                <option>Pedreiro</option>
+                <option>Bombeiro</option>
+                <option>Eletricista</option>
+                <option>Babá</option>
+                <option>Motorista</option>
+                <option>Mecânico</option>
+                <option>Instalador</option>
+            </select>
+            <br><br>
+            <label for="contratante">Nome Contratante:</label>
+            <input type="text" id="contratante" name="contratante">
+            <br><br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Rua dos Lobos">
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" style="width:40px" placeholder="000">
+            <br><br>
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" placeholder="Apto 103">
+            <br><br>
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Jardins">
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" style="width:80px" placeholder="30082-170">
+            <br><br>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="São Paulo">
+            <label for="estado">UF</label>
+
+            <select name="UF" id="uf">
+                <option selected="">Selecione</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select>
+            <br><br>
+            <label for="telefonefx">Telefone Fixo</label>
+            <input type="text" id="telefonefx" name="telefonefx" style="width:110px" placeholder="(31) 3333-3333">
+            <label for="celular">Celular</label>
+            <input type="text" id="celular" name="celular" style="width:110px" placeholder="(31)99999-9999">
+            <br><br>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Ex: ana@gmail.com">
+            <br><br>
+
+            <label>Início Imediato?</label>
+            <input type="radio" id="rd1" name="opcao" value="sim"/> Sim
+            <input type="radio" id="rd2" name="opcao" value="nao" />Não
+            <br><br>
+
+            <label>Descrição da vaga:</label>
+            <br><br>
+            <textarea id="description" name="description" rows="4" 
+                placeholder="Descreva em detalhes as tarefas a serem executadas..."></textarea>
+            <br><br>
+            <label>Requisitos:</label>
+            <br><br>
+            <textarea id="requisitos" name="requisitos" rows="3"    
+                placeholder="Descreva os requisitos necessários para a execução do trabalho..."></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+<p class="text-center">copyright 2021 (@) Domestic Solutions</p>
+    </footer>
+
+    <script src="js/cadastro_vaga2.js"></script>
+</body>
+
+</html>

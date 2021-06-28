@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vagas</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<header>
+    <a href="..." id="homePage">Home Page</a>
+    </header>
+<body>
+    <h1>Cadastro de Vaga - Domestic Solutions</h1>
+    <p></p>
+    <br><br>
+    <form>
+    <label for="titulovaga">Título da Vaga</label>
+    <input type="text" id="titulovaga" name="titulovaga"style="width:400px" placeholder="Ex: Diarista 3x por semana">
+    <br><br>
+    <label for="servicos">Selecione o tipo de serviço:</label>
+    <select name="servicos" id="lista-servicos">
+      <option selected disabled value="">Selecione...</option>
+      <option value="Faxina">Faxina</option>
+      <option value="Lavadeira">Lavadeira</option>
+      <option value="Passadeira">Passadeira</option>
+      <option value="Pintura">Pintura</option>
+      <option value="Serralheria">Serralheria</option>
+      <option value="Vidraçaria">Vidraçaria</option>
+      <option value="Chaveiro">Chaveiro</option>
+      <option value="Pedreiro">Pedreiro</option>
+      <option value="Bombeiro">Bombeiro</option>
+      <option value="Eletricista">Eletricista</option>
+      <option value="Babá">Babá</option>
+      <option value="Motorista">Motorista</option>
+      <option value="Mecânico">Mecânico</option>
+      <option value="Instalador">Instalador</option>
+    </select>
+    <br><br>
+    <label for="contratante">Nome Contratante</label>
+    <input type="text" id="contratante" name="contratante" style="width:400px" maxlength="40" >
+    <br><br>
+    <label for="endereco">Endereço</label">
+        <input type="text" id="endereco" name="endereco"style="width:400px"placeholder="Rua dos Lobos" required="required" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$ /">
+        <label for="numero">Número</label>
+        <input type="text" name="numero" onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="width:50px" placeholder="Ex: 000" maxlength="4" />
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" name="complemento"style="width:68px"placeholder="Ex: Ap 103">
+    <br><br>
+    <label for="bairro">Bairro</label>
+    <input type="text" id="bairro" name="bairro"placeholder="Jardins">
+    
+    <label for="cep">CEP</label>
+    <input oninput="mascara(this, 'cep')" id="cep" type="text" class="form-control" placeholder="Ex.: xxxxx-xxx" autocomplete="off" name="customer['cep']">
+    <label for="cidade">Cidade</label>
+    <input type="text" id="cidade" name="cidade"placeholder="São Paulo">  
+    <label for="estado">UF</label>
+
+    <select name="uf" id="uf" required>
+      <option selected disabled value="">Selecione</option>
+      <option>AC</option>
+      <option>AL</option>
+      <option>AP</option>
+      <option>AM</option>
+      <option>BA</option>
+      <option>CE</option>
+      <option>DF</option>
+      <option>ES</option>
+      <option>GO</option>
+      <option>MA</option>
+      <option>MT</option>
+      <option>MS</option>
+      <option>MG</option>
+      <option>PA</option>
+      <option>PB</option>
+      <option>PR</option>
+      <option>PI</option>
+      <option>RJ</option>
+      <option>RN</option>
+      <option>RS</option>
+      <option>RO</option>
+      <option>RR</option>
+      <option>SC</option>
+      <option>SP</option>
+      <option>SE</option>
+      <option>TO</option>  
+    </select>   
+    <br><br>
+   
+    <label for="telefonefix">Telefone</label>
+    <input oninput="mascara(this, 'telfix')" id="telefonefix" type="text" class="form-control" placeholder="Ex.: xxxx-xxxx" autocomplete="off" name="customer['telfix']">
+    <label for="celular">Celular</label>
+    <input oninput="mascara(this, 'celular')" id="celular" type="text" class="form-control" placeholder="Ex.: xxxxx-xxxx" autocomplete="off" name="customer['celular']">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email"style="width:300px"placeholder="Ex: ana@gmail.com">
+    
+        <br><br>
+        <label>Necessário disponibilidade para início imediato?</label>
+         <br><br>
+            <input type="radio" name="opcao" value="sim"/> Sim
+            <input type="radio" name="opcao" value="nao"/>Não
+             <br><br>
+
+    <label>Descrição da vaga</label>
+    <br><br>
+    <textarea  id="description" name="description" rows="4" cols="50"placeholder="Descreva em detalhes as tarefas a serem executadas..."></textarea>
+    <br><br>
+    <label>Requisitos</label>
+    <br><br>
+    <textarea  id="requisitos" name="requisitos" rows="3" cols="30"placeholder="Descreva os requisitos necessários para a execução do trabalho..."></textarea>
+    <br><br>
+    </form>
+    <form method="post" action="enviar-formulario.js">
+                <input type="submit" value="Confirmar" />
+        <input type="reset" value="Cancelar" />
+        </form>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>

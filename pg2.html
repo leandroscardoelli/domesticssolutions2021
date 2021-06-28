@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFIL</title>
+    <link rel="stylesheet" href="css/pg2.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="topNavigation">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-link" href="Home_page.html">
+                <img src="imagens/logods.PNG" alt="" width="200" height="50"></a>
+            <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="Cadastro_Perfil.html">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="Cadastro_Vaga2.html">Divulgar Vaga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="sistemaLogin.html">Já sou usuário</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="Serviços.html">Serviços</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-3 col-xl-2 um" id="um">
+                <h1>Hello!</h1>
+                <img class="btn" id="oculto" src="imagens/voltar.jpg" alt="" width="80" onclick="retornar()">
+                <img class="btn btn-primary" id="imgPerfil" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse" aria-expanded="false"
+                    aria-controls="multiCollapseExample1 multiCollapseExample2" data-bs-placement="right"
+                    title="Meu perfil" src="imagens/defaultperfil.png" alt="" width="200" height="200"
+                    onclick="expandir()">
+                <h1 class="nomeUser">recebe nome</h1>
+
+                <p></p>
+                </img>
+
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <div class="cartao">
+                            <h2 class="center">Meu Perfil</h2>
+                            <h5>Sobre mim:</h5>
+                            <p class="nascimento date"></p>
+                            <p class="cpf"></p>
+                            <p class="escolaridade"></p>
+                            <p class="sobreUser"></p>
+                            <div class="cartao">
+                                <h5>Redes de Contato:</h5>
+                                <p class="Email "></p>
+                                <div class="d-flex">
+                                    <P>Tel. Fixo:</P>
+                                    <p class="telefone"></p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Celular:</p>
+                                    <p class="celular"></p>
+                                </div>
+                            </div>
+
+                            <div class="cartao">
+                                <h5>Dados de Localização:</h5>
+                                <div class="d-flex">
+                                    <p class="cidade"></p>
+                                    <p>-</p>
+                                    <p class="uf"></p>
+                                </div>
+                                <p>Bairro:</p>
+                                <p class="bairro"></p>
+                                <P>Rua e Número:</P>
+                                <p class="endereco"></p>
+                                <p class="cep"></p>
+                            </div>
+
+                            <div class="cartao">
+                                <h5>Sobre Meus Serviços:</h5>
+                                <p class="opcaoServico1"></p>
+                                <p class="servico1"> </p>
+                                <p class="opcaoServico2"></p>
+                                <p class="servico2"> </p>
+                            </div>
+                            <button class="btn btn btn-danger float-end">Alterar minhas informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-8 dois" id="dois">
+                <nav>
+                    <div class="nav nav-tabs position-relative" id="nav-tab" role="tablist">
+                        <button class="nav-link active fs-5" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Prestadores de Serviços</button>
+                        <button class="nav-link fs-5" id="nav-profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Vagas de
+                            Emprego</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger position-absolute top-0 end-0"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            i
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Observação</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Aqui você pode fazer uma busca completa, seja por profissionais ou por
+                                        oportunidades de trabalho, na aba prestadores de serviços você encontra pessoas
+                                        que se cadastraram e podem auxiliá-lo em determinados serviços. Na aba vagas de
+                                        emprego são pessoas físicas ou jurídicas que estão
+                                        disponibilizando vagas para emprego sem prazo determinado, ou serviços
+                                        temporários.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <div class="marge10 filtro">
+                            Filtro:
+                            <select id="formSexo">
+                                <option selected="">selecione...</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                            <select name="servicos" id="opcaoServico1">
+                                <option selected="">selecione...</option>
+                                <option>Faxina</option>
+                                <option>Lavadeira</option>
+                                <option>Passadeira</option>
+                                <option>Pintura</option>
+                                <option>Serralheria</option>
+                                <option>Vidraçaria</option>
+                                <option>Chaveiro</option>
+                                <option>Pedreiro</option>
+                                <option>Bombeiro</option>
+                                <option>Eletricista</option>
+                                <option>babá</option>
+                                <option>Motorista</option>
+                                <option>Mecânico</option>
+                                <option>Instalador</option>
+                            </select>
+                        </div>
+
+                        <div class="card cardBusca" style="width: 15rem;">
+                            <img src="imagens/Ermana.jpg" height="240" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amanda Burquesa</h5>
+                                <p class="date">1997-01-01</p>
+                                <p class="card-text">amanda.burq@gmail.com</p>
+                                <p>Cuidadora</p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="card cardBusca" style="width: 15rem;">
+                            <img src="imagens/defaultperfil.png" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title nomeUser">Danilo</h5>
+                                <p class="card-text nascimento date"> 1997-01-01</p>
+                                <p class="Email">danilo.gortolo@yahoo.com</p>
+                                <p class="opcaoServico1">pintor</p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTopera" aria-controls="offcanvasTopera">Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="card cardBusca" style="width: 15rem;">
+                            <img src="imagens/felipe.jpg" height="240" class="" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tiago Barroso</h5>
+                                <p class="card-text date">1997-01-01</p>
+                                <p>tiago_fatildo@hotmail.com</p>
+                                <p>Pedreiro</p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTereza" aria-controls="offcanvasTereza">Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                        <div class="card" id="cardvaga" style="width: 50%;">
+                            <img src="imagens/agencia.png" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h2 class="titulovagaC" ></h2>
+                                <h4 class="tipoServicoC"></h4>
+                                <div class="d-flex">
+                                    <p class="cidadeC"></p>
+                                    <p>-</p>
+                                    <p class="ufC"></p>
+                                </div>
+                                <p>Com inicio imediato?</p>
+                                <h5 class="inicioC"></h5>
+
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasvaga" aria-controls="offcanvasvaga">Detalhes</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-xl-2 tres" id="tres">
+                <div class="fs-5 fst-italic">
+                    <p>saiba mais clicando na imagem</p>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a class="logo"
+                                    href="https://www.domesticalegal.com.br/numero-de-trabalhadores-domesticos-tem-queda-de-473-mil-e-e-o-menor-da-serie-do-ibge/">
+                                    <img src="imagens/domestica1024.jpg" class="d-block w-100" alt="...">
+                                </a>
+                                <h3>Estatísticas</h3>
+                                <p>Contratações de trabalhadores de domésticos caem durante a pandemia.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <a
+                                    href="https://www.nsctotal.com.br/noticias/numero-de-reformas-de-imoveis-cresceu-desde-o-inicio-da-pandemia">
+                                    <img src="imagens/reformacasa1024.jpg" class="d-block w-100" alt="...">
+                                </a>
+                                <h3>Reforma Residenciais em alta!!!</h3>
+                                <p>Brasileiros investiram em reforma entre 2020 e 2021, com tendência a continuar
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <a
+                                    href="https://www.jornalopcao.com.br/ultimas-noticias/aumento-da-populacao-idosa-no-brasil-faz-crescer-demanda-por-cuidadores-330521/">
+                                    <img src="imagens/cuidadorasdeidosos1024.png" class="d-block w-100" alt="...">
+                                </a>
+                                <h3>População brasileira está envelhecendo...</h3>
+                                <p>Cresce a demanda por cuidadores de idosos.</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--offcanvas-->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Amanda Burquesa</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            fictício
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTopera" aria-labelledby="offcanvasToperaLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel" class="nomeUser">Danilo</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <h5>Sobre, <span class="nomeUser"></span></h5>
+                        <p class="nascimento date"></p>
+                        <p class="escolaridade"></p>
+                        <p class="sobreUser"></p>
+                        <h5>Redes de Contato:</h5>
+                        <p class="Email "></p>
+                        <div class="d-flex">
+                            <P>Tel. Fixo:</P>
+                            <p class="telefone"></p>
+                        </div>
+                        <div class="d-flex">
+                            <p>Celular:</p>
+                            <p class="celular"></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <h5>Sobre seus Serviços:</h5>
+                        <p class="opcaoServico1"></p>
+                        <p class="servico1"> </p>
+                        <p class="opcaoServico2"></p>
+                        <p class="servico2"> </p>
+                        <h5>Dados de Localização:</h5>
+                        <div class="d-flex">
+                            <p class="cidade"></p>
+                            <p>-</p>
+                            <p class="uf"></p>
+                        </div>
+                        <p>Bairro:</p>
+                        <p class="bairro"></p>
+                        <P>Rua e Número:</P>
+                        <p class="endereco"></p>
+                        <p class="cep"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTereza" aria-labelledby="offcanvasTerezaLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Tiago Barroso</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            fictício
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasvaga" aria-labelledby="offcanvasvagaLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel" class="titulovagaC"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <h5>Descrição da vaga: </h5>
+                        <p class="tipoServicoC"></p>
+                        <p class="descricaoC"></p>
+                        <h5> Requisitos:</h5>
+                        <p class="requisitosC"></p>
+                        <button class="btn btn-primary" onclick="interesse()">Demonstrar interesse</button>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <h5>Contratante:</h5>
+                        <p class="contratanteC"></p>
+                        <p class="emailC"></p>
+                        <h6>Cidade e Estado:</h6>
+                        <div class="d-flex">
+                            <p class="cidadeC"></p>
+                            <p>-</p>
+                            <p class="ufC"></p>
+                        </div>
+                        <h6>Bairro e endereço:</h6>
+                        <p class="bairroC"></p>
+                        <div class="d-flex">
+                            <p class="enderecoC"></p>
+                            <p>-</p>
+                            <p class="numeroC"></p>
+                        </div>
+                        <p class=".telefoneFxC"></p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="text-center">copyright 2021 (@) Domestic Solutions</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/pg2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

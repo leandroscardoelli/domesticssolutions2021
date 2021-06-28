@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,112 +8,124 @@
     <title>Cadastro de Vagas</title>
     <link rel="stylesheet" href="Styles.css">
 </head>
-<body style="background-image: url(Screenshot_1.png);" >
-<header>
-    <a href="Home_page.html" id="homePage">Home Page</a>
-    </header>
-<body>
-    <h1>Cadastro de Vaga - Domestic Solutions</h1>
-    <p></p>
-    <br><br>
-    <label for="titulovaga">Título da Vaga</label>
-    <input type="text" id="titulovaga" name="titulovaga"style="width:400px">
-    <br><br>
-    <label for="servicos">Selecione o tipo de serviço:</label>
-    <select name="servicos" id="lista-servicos">
-      <option selected="">Selecione...</option>
-      <option value="Faxina">Faxina</option>
-      <option value="Lavadeira">Lavadeira</option>
-      <option value="Passadeira">Passadeira</option>
-      <option value="Pintura">Pintura</option>
-      <option value="Serralheria">Serralheria</option>
-      <option value="Vidraçaria">Vidraçaria</option>
-      <option value="Chaveiro">Chaveiro</option>
-      <option value="Pedreiro">Pedreiro</option>
-      <option value="Bombeiro">Bombeiro</option>
-      <option value="Eletricista">Eletricista</option>
-      <option value="Babá">Babá</option>
-      <option value="Motorista">Motorista</option>
-      <option value="Mecânico">Mecânico</option>
-      <option value="Instalador">Instalador</option>
-    </select>
-    <br><br>
-    <label for="contratante">Nome Contratante</label>
-    <input type="text" id="contratante" name="contratante"style="width:400px">
-    <br><br>
-    <label for="endereco">Endereço</label">
-        <input type="text" id="endereco" name="endereco"style="width:400px"placeholder="Rua dos Lobos">
-        <label for="numero">Número</label>
-        <input type="text" id="numero" name="numero"style="width:40px"placeholder="000">
-        <label for="complemento">Complemento</label>
-        <input type="text" id="complemento" name="complemento"style="width:68px"placeholder="Apto 103">
-    <br><br>
-    <label for="bairro">Bairro</label>
-    <input type="text" id="bairro" name="bairro"placeholder="Jardins">
-    
-    <label for="cep">CEP</label>
-    <input type="text" id="cep" name="cep"style="width:80px"placeholder="30082-170">
-    <label for="cidade">Cidade</label>
-    <input type="text" id="cidade" name="cidade"placeholder="São Paulo">  
-    <label for="estado">UF</label>
+<body style="background-image: url(Screenshot_1.png);">
+    <header>
+        <a class="logo" href="Home_page.html"> <img src="logods.PNG" width="130px" alt="130"> </a>
+        <header>
+            <h1>Cadastro do Empregador</h1>
+            <p>Fazendo Cadastro você cria um perfil que lhe permite divulgar vagas e selecionar prestadores de serviços
+                perto de você, se assim desejar. </p>
 
-    <select name="UF" id="uf">
-      <option selected="">Selecione</option>
-      <option value="AC">AC</option>
-      <option value="AL">AL</option>
-      <option value="AP">AP</option>
-      <option value="AM">AM</option>
-      <option value="BA">BA</option>
-      <option value="CE">CE</option>
-      <option value="DF">DF</option>
-      <option value="ES">ES</option>
-      <option value="GO">GO</option>
-      <option value="MA">MA</option>
-      <option value="MT">MT</option>
-      <option value="MS">MS</option>
-      <option value="MG">MG</option>
-      <option value="PA">PA</option>
-      <option value="PB">PB</option>
-      <option value="PR">PR</option>
-      <option value="PI">PI</option>
-      <option value="RJ">RJ</option>
-      <option value="RN">RN</option>
-      <option value="RS">RS</option>
-      <option value="RO">RO</option>
-      <option value="RR">RR</option>
-      <option value="SC">SC</option>
-      <option value="SP">SP</option>
-      <option value="SE">SE</option>
-      <option value="TO">TO</option>  
+        </header>
 
-    </select>   
-    <br><br>
-   
-    <label for="telefonefx">Telefone Fixo</label>
-    <input type="text" id="telefonefx" name="telefonefx"style="width:110px"placeholder="(31) 3333-3333">
-    <label for="celular">Celular</label>
-    <input type="text" id="celular" name="celular"style="width:110px"placeholder="(31)99999-9999">
-    <label for="email">E-mail</label>
-    <input type="text" id="email" name="email"style="width:300px"placeholder="Ex: ana@gmail.com">
-    </body>
-        <br><br>
-        <label>Início Imediato?</label>
-        <form>
-            <input type="radio" name="opcao" value="sim"/> Sim
-            <input type="radio" name="opcao" value="nao"/>Não
-             </form> 
-             <p></p>
-    <label>Descrição da vaga</label>
-    <br><br>
-    <textarea  id="description" name="description" rows="4" cols="50"placeholder="Descreva em detalhes as tarefas a serem executadas..."></textarea>
-    <br><br>
-    <label>Requisitos</label>
-    <br><br>
-    <textarea  id="requisitos" name="requisitos" rows="3" cols="30"placeholder="Descreva os requisitos necessários para a execução do trabalho..."></textarea>
-    <br><br>
-    <form method="post" action="enviar-formulario.js">
-                <input type="submit" value="Confirmar" />
-        <input type="reset" value="Cancelar" />
-        </form>
+        <body>
 
+            <p></p>
+            <br><br>
+            <label for="titulovaga">Título da Vaga</label>
+            <input type="text" id="titulovaga" name="titulovaga" style="width:400px">
+            <br><br>
+            <label for="servicos">Selecione o tipo de serviço:</label>
+            <select name="servicos" id="lista-servicos">
+                <option selected="">Selecione...</option>
+                <option value="Faxina">Faxina</option>
+                <option value="Lavadeira">Lavadeira</option>
+                <option value="Passadeira">Passadeira</option>
+                <option value="Pintura">Pintura</option>
+                <option value="Serralheria">Serralheria</option>
+                <option value="Vidraçaria">Vidraçaria</option>
+                <option value="Chaveiro">Chaveiro</option>
+                <option value="Pedreiro">Pedreiro</option>
+                <option value="Bombeiro">Bombeiro</option>
+                <option value="Eletricista">Eletricista</option>
+                <option value="Babá">Babá</option>
+                <option value="Motorista">Motorista</option>
+                <option value="Mecânico">Mecânico</option>
+                <option value="Instalador">Instalador</option>
+            </select>
+            <br><br>
+            <label for="contratante">Nome Contratante</label>
+            <input type="text" id="contratante" name="contratante" style="width:400px">
+            <br><br>
+            <label for="endereco">Endereço</label">
+                <input type="text" id="endereco" name="endereco" style="width:400px" placeholder="Rua dos Lobos">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero" style="width:40px" placeholder="000">
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" name="complemento" style="width:68px" placeholder="Apto 103">
+                <br><br>
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Jardins">
+
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" style="width:80px" placeholder="30082-170">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="São Paulo">
+                <label for="estado">UF</label>
+
+                <select name="UF" id="uf">
+                    <option selected="">Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+
+                </select>
+                <br><br>
+
+                <label for="telefonefx">Telefone Fixo</label>
+                <input type="text" id="telefonefx" name="telefonefx" style="width:110px" placeholder="(31) 3333-3333">
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" name="celular" style="width:110px" placeholder="(31)99999-9999">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" style="width:300px" placeholder="Ex: ana@gmail.com">
+
+                <br><br>
+                <label>Início Imediato?</label>
+                <form>
+                    <input type="radio" name="opcao" value="sim" /> Sim
+                    <input type="radio" name="opcao" value="nao" />Não
+                </form>
+                <p></p>
+                <label>Descrição da vaga</label>
+                <br><br>
+                <textarea id="description" name="description" rows="4" cols="50"
+                    placeholder="Descreva em detalhes as tarefas a serem executadas..."></textarea>
+                <br><br>
+                <label>Requisitos</label>
+                <br><br>
+                <textarea id="requisitos" name="requisitos" rows="3" cols="30"
+                    placeholder="Descreva os requisitos necessários para a execução do trabalho..."></textarea>
+                <br><br>
+                <form method="post" action="enviar-formulario.js">
+                    <input type="submit" value="Confirmar" />
+                    <input type="reset" value="Cancelar" />
+                </form>
+        </body>
+        <footer>
+            <p></p>
+            <p class="text-center">copyright 2021 (@) Domestic Solutions</p>
+          </footer>
 </html>

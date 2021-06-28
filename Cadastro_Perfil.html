@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Cadastro</title>
-    <link rel="stylesheet" href="Cadastro_Perfil.css">
+    <link rel="stylesheet" href="css/Cadastro_Perfil.css">
 </head>
 
 <body>
     <header>
-        <a href="Home_page.html" id="homePg">home page</a>
-        <h1>Faça seu Cadastro</h1>
-        <p>Fazendo Cadastro você cria um perfil que lhe permite encontrar prestadores de serviços
+        <a class="logo" href="Home_page.html"> <img src="imagens/logods.PNG" width="130px" alt="130"> </a>
+        <h1>Cadastro do Empregado</h1>
+        <p>Fazendo Cadastro você cria um perfil que lhe permite encontrar vagas e oportunidades
             perto de você, e também divulgar seus serviços, se assim desejar. </p>
     </header>
 
@@ -37,7 +37,8 @@
                 <input type="text" id="formEscolaridade" placeholder="EX: Ensino Médio Completo">
 
                 <label for="formCPF">CPF:</label>
-                <input type="number" id="formCPF" placeholder="000.000.000-00">
+                <input type="text" id="formCPF" placeholder="000.000.000-00" autocomplete="off" maxlength="14"
+                    onkeyup="mascaraCPF">
 
                 <label for="formTelefone"> Tel. Fixo:</label>
                 <input type="tel" id="formTelefone" placeholder="(34)3434-3434">
@@ -93,47 +94,30 @@
                 <input type="text" id="formEndereco" placeholder="Rua dos Lobos, nº 0">
             </div>
 
-             <div class="ladoDireito">
+            <div class="ladoDireito">
                 <h1>Deseja Divulgar Seus Serviços?</h1>
                 <div class="radio">
                     <input type="radio" id="formRadio1" name="q1" onclick="teste()" checked>
                     <label for="formRadio1"> Não no momento.</label><br>
-                    <input  type="radio" id="formRadio2" name="q1" onclick="teste()">
+                    <input type="radio" id="formRadio2" name="q1" onclick="teste()">
                     <label for="formRadio2">Sim, imediatamente. </label>
                 </div><br>
 
                 <div class="hidden" id="descricaoServ">
-                
+
                     <p>Descreva os serviços que você pode prestar e os valores cobrados(a seu critério). Atenção: para
-                        melhorar a organização, preencha em cada campo um serviço específico, caso você preste mais de
+                        melhor organização, selecione o serviço específico, ou, os serviços específicos, caso você
+                        preste mais de
                         um. Dê detalhes abaixo da opção. </p>
-                        
-                        <select name="servicos" id="opcaoServico1">
-                            <option selected=""></option>
-                            <option >Faxina</option>
-                            <option>Lavadeira</option>
-                            <option>Passadeira</option>
-                            <option>Pintura</option>
-                            <option>Serralheria</option>
-                            <option >Vidraçaria</option>
-                            <option>Chaveiro</option>
-                            <option>Pedreiro</option>
-                            <option>Bombeiro</option>
-                            <option>Eletricista</option>
-                            <option>babá</option>
-                            <option>Motorista</option>
-                            <option>Mecânico</option>
-                            <option>Instalador</option>
-                          </select>    
-                    <textarea rows="5" name="servico1" id="formServico1"></textarea>
-                    <select name="servicos" id="opcaoServico2">
+
+                    <select name="servicos" id="opcaoServico1">
                         <option selected=""></option>
-                        <option >Faxina</option>
+                        <option>Faxina</option>
                         <option>Lavadeira</option>
                         <option>Passadeira</option>
                         <option>Pintura</option>
                         <option>Serralheria</option>
-                        <option >Vidraçaria</option>
+                        <option>Vidraçaria</option>
                         <option>Chaveiro</option>
                         <option>Pedreiro</option>
                         <option>Bombeiro</option>
@@ -142,12 +126,31 @@
                         <option>Motorista</option>
                         <option>Mecânico</option>
                         <option>Instalador</option>
-                      </select>
+                    </select>
+                    <textarea rows="5" name="servico1" id="formServico1"></textarea>
+                    <select name="servicos" id="opcaoServico2">
+                        <option selected=""></option>
+                        <option>Faxina</option>
+                        <option>Lavadeira</option>
+                        <option>Passadeira</option>
+                        <option>Pintura</option>
+                        <option>Serralheria</option>
+                        <option>Vidraçaria</option>
+                        <option>Chaveiro</option>
+                        <option>Pedreiro</option>
+                        <option>Bombeiro</option>
+                        <option>Eletricista</option>
+                        <option>babá</option>
+                        <option>Motorista</option>
+                        <option>Mecânico</option>
+                        <option>Instalador</option>
+                    </select>
                     <textarea rows="5" name="servico2" id="formServico2"></textarea>
 
                 </div><br>
 
-                <input type="text" id="formDescricaoUsuario" placeholder="mais sobre você... hobies? Experiências? "><br>
+                <input type="text" id="formDescricaoUsuario"
+                    placeholder="mais sobre você... hobies? Experiências? "><br>
 
                 <label for="formSenha" id="labelSenha"> Senha: </label>
                 <input type="password" id="formSenha" placeholder="Digite sua Senha" minlength="5"><br>
@@ -160,13 +163,14 @@
                 </label><br>
 
                 <button type="submit">Concluir</button>
-            </div>  
+            </div>
         </form>
     </main>
 
     <footer>
-        copyright 2021 (@) Domestic Solutions
-    </footer>
+        <p></p>
+        <p class="text-center">copyright 2021 (@) Domestic Solutions</p>
+      </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Cadastro_Perfil.js"></script>
